@@ -1,0 +1,254 @@
+$font-titles :  "Lobster Two";
+$font-texts : "Open Sans";
+.container-fluid{
+	padding: 0;
+}
+.container {
+  max-width:650px;
+  margin-top: 3.5%;
+}
+body {
+  background:white;;
+}
+/*inicio nav*/
+.navbar-default{
+	margin:0;
+  border-radius: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  background-color:#EBEBEB;
+}
+.navbar-header{
+	float:none;
+}
+.nav li{
+	list-style: none;
+	font-family: "JosefinSlab-Regular";
+	font-size: 21px;
+	padding: 0 2%;
+	a{
+		padding:41px 0px 13px 44px;
+	}
+	img {
+  	  width: 68px;
+	  margin:-20px 249px;
+	  position: absolute;
+    }
+}
+.navbar-nav{
+	text-align: center;
+	float: none;
+	li {
+     float:left;
+     display: inline-block;
+     @media screen and (max-width: #{$screen-phone}) {
+     	display: block;
+     }
+	}
+}
+/*inicio baner*/ 
+.home-centro {
+   background-image:url(../img/portafolio6.jpg);
+   background-size:cover;
+   width: 100%;
+   height:560px;
+  
+}
+/*barra social*/
+.redes2{
+    position: fixed;
+	width: 20%;
+	top: 35%;
+	z-index: 9;
+	right: 0;
+	left:93%;
+}
+.redes2 img{
+	width:70%;
+	right:0
+}
+.icono-social {
+	height: 63px;
+	width: 63px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+/*inicios de seccion*/
+.end-seccion { 
+	padding: 20px;
+ 	margin:15px 73px;
+ 	h3{
+ 	position:absolute;
+  	font-family: $font-titles;
+  	font-size: 42px;
+  	color:black;
+  	margin:-40px 145px;;
+  }
+ }
+.divisor1{ 
+  width: 100%;
+  margin:-50px -16px;
+}
+ .divisor{ 
+  width: 100%;
+  margin: -50px -95px;
+}
+ .frases{
+    color: grey;
+    margin:45px -21px 0px;
+    font-family: $font-texts;
+}
+/*inicio de conoceme*/
+.service-details {
+	width: 650px;
+	height: 300px;	
+	overflow: hidden;
+	position: relative;
+ img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: inherit;
+	width:350px;
+	height: 100%;
+	float: left;
+	transition: all 0.8s;
+	-moz-transition: all 0.8s;
+   }
+}
+.service-details .service-hover-text{
+	width: 53%;
+	height:100%;
+	position: absolute;
+	top: 0%;
+	left: 50%;
+	padding: 3% 4%;
+	background: #D90E0E;
+	color: rgba(255,255,255,1);
+	transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.4s;
+ h3 {
+	padding: 0px;
+	padding-bottom: 13px;
+	margin: 0px;
+	font-size: 14px;
+  letter-spacing: 3px;
+	width: 90%;
+	font-family: $font-titles;
+  text-transform:uppercase;
+	border-bottom: 2px solid #000;
+}
+ p {
+	padding-top: 13px;
+	font-size: 14px;
+	line-height: 20px;
+	font-family: $font-texts;
+	}
+}
+
+.service-details:hover .service-hover-text {
+	display: block !important;
+	color: rgba(255,255,255,1);
+	background:rgba(217,14,14,0.85);
+	left: 0px;
+	top: 0px;
+}
+
+
+.service-details .service-text {
+	width: 50%;
+	height: inherit;
+	background: #000;
+	float: left;
+	position: absolute;
+	left: 50%;
+ p {
+	padding:100px 0px 0px 20px;
+	font-size: 24px;
+	font-family: "Open Sans";
+  font-weight:700;
+	color: #fff;
+}
+}
+
+.service-details .service-text a , .service-white .service-text {
+	padding: 0px 0px 0px 20px;
+	font-size: 14px !important;
+	color:#FF5A22 !important;
+	font-family: "Open Sans" !important;
+	text-decoration: none !important; 
+}
+ h3{
+  	text-align: center;
+  	font-size: 16px;
+  	color: #303030;
+  }
+/*inicio de servicios*/
+.img-over{
+  position: relative;
+  width: 110%;
+  margin: 75px 0px;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  top: 0%;
+  min-height: 100%; }
+  .overlay:hover {
+    background-color:#f2e3df; 
+    transition: 1s;
+  }
+
+.overlay:hover .frase{
+	visibility: visible;
+}
+.letra{
+	 width: 100%;
+	 position: absolute;
+	 top:50%; 
+	 text-align: center;
+	 color: white;
+	 visibility: hidden;
+span{
+	font-family: $font-texts;
+	font-size: 20px;
+ }
+}
+/*inicio servicio*/
+.logos-dising{
+  	  margin: 40px auto;
+  }
+/*inicio servicio*/
+.piepagina{
+     margin: 0 auto;
+     background-image: url(../img/portafolio5.jpg);
+     background-repeat:no-repeat;
+     background-position:center center;
+     background-size:cover;
+     background-attachment:fixed;
+     padding:0%;
+	
+	p{
+	 margin: 10px -47px
+	}
+}
+.img-circle {
+  width: 35%;
+  border-radius: 50%;
+  border:solid 2px ;
+  padding:5px;
+}
+a{
+ text-decoration: none;
+ color:black;
+ font-family: $font-titles;
+ -webkit-transition: 0.3s;
+}
+a:hover{
+	color:violet;
+	text-decoration: none;
+}
+
+/*end foter*/
